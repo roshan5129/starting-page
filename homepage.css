@@ -16,12 +16,12 @@ nav {
   flex-wrap: wrap;
 }
 nav h1 {
-  position: absolute; /* Remove it from the flow */
-  left: 50%; /* Start at the center of the container */
-  transform: translateX(-50%); /* Adjust for perfect centering */
+  position: relative;
+  transform: none; /* Adjust for perfect centering */
   font-size: 34px; /* Adjust size of the title */
-  text-align: center;
+  text-align: left;
   color: brown;
+  margin-right: auto;
 }
 .nav-links {
   margin-left: auto; /* Push links to the far right */

@@ -15,6 +15,20 @@ body {
   align-items: center;
   height: 100vh;
   font-family: Arial, sans-serif;
+  flex-direction: column;
+}
+/* Logo container */
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px; /* Space between logo and form */
+}
+
+/* Team logo styling */
+.team-logo {
+  max-width: 150px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: -25px; /* Space below the logo */
+  background: transparent;
 }
 
 /* Container for the form */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Vehicle Service Management</title>
+  <link rel="stylesheet" href="contact_us.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you. Reach out to us for any inquiries or assistance.</p>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Get in Touch</h2>
+      <form action="contact_submit.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Vehicle Service Management | <a href="/About us/index.html">About Us</a></p>
+    </footer>
+  </div>
+</body>
+
+</html>

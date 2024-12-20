@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-page styling */
+body {
+  background: url('bg.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the form */
+.form-container {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 25px 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Form elements */
+.form-container h2 {
+  margin-bottom: 20px;
+  color: brown;
+}
+
+.form-container label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #333;
+}
+
+.form-container input[type='email'],
+.form-container input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.form-container input:focus {
+  border-color: #667eea;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #764ba2;
+}
+
+.form-container a {
+  text-decoration: none;
+  color: blue;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.form-container a:hover {
+  color: #764ba2;
+}
+
+.form-container .register {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+.password-container {
+  position: relative;
+}
+
+.password-container input[type='password'],
+.password-container input[type='text'] {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Adjust padding for the eye icon */
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}

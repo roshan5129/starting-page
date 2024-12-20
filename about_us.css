@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f9;
+  color: #333;
+  padding: 0 20px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+header {
+  background: #667eea;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.about img {
+  flex: 1;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 2;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #667eea;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Our Mission Section */
+.mission {
+  background: #667eea;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mission p {
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #333;
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    padding: 15px;
+  }
+}
+.about img {
+  height: 275px;
+  width: 200px;
+}

@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Section */
+nav {
+  background: url(bg1.jpeg);
+  font-size: 24px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+nav h1 {
+  position: absolute; /* Remove it from the flow */
+  left: 50%; /* Start at the center of the container */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  font-size: 34px; /* Adjust size of the title */
+  text-align: center;
+  color: brown;
+}
+.nav-links {
+  margin-left: auto; /* Push links to the far right */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove underline */
+  color: black;
+  font-size: 18px; /* Adjust font size */
+  margin-left: 10px; /* Add space between links */
+  transition: color 0.3s;
+  color: brown; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+  color: red; /* Change color on hover */
+}
+.image-container {
+  position: relative; /* Sets the container as a positioning reference */
+  width: 100%; /* Width of the road image */
+  height: 100px; /* Height of the road image */
+  overflow: hidden; /* Ensures the car doesn't appear outside the container */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the road image scales correctly */
+}
+
+.car-gif {
+  position: absolute; /* Allows it to move across the container */
+  width: 150px; /* Adjust the size of the car GIF */
+  bottom: 2%; /* Position the car near the bottom of the road */
+  left: 0px; /* Start off-screen from the left */
+  animation: move-car 9s linear infinite; /* 5 seconds for one loop, adjust as needed */
+}
+
+/* Keyframes for car movement */
+@keyframes move-car {
+  0% {
+    left: -200px; /* Start off-screen on the left */
+  }
+  100% {
+    left: 100%; /* Move off-screen to the right */
+  }
+}
+
+/* Left Section*/
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+.left img {
+  height: 545px;
+  width: 850px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right Section */
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  /* justify-content: center; */
+  text-align: center;
+  gap: 20px; /* Space between elements */
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.header p {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0; /* Remove default margins */
+  text-align: center; /* Center the "Welcome" text */
+  flex: 1;
+}
+.icons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  position: absolute;
+}
+.icons1 img {
+  height: 90px;
+  width: 90px;
+  position: absolute;
+}
+.icons1 img:first-child {
+  top: 6px;
+  left: 25px;
+}
+
+.icons1 img:last-child {
+  top: 6px;
+  right: 10px;
+}
+.login {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 375px;
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  transition: box-shadow 0.3s ease;
+}
+
+.login:hover {
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3);
+}
+
+.login img {
+  height: 85px;
+  width: 85px;
+}
+.login p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+button {
+  height: 50px;
+  width: 100px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.icons2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+.icons2 img {
+  height: 90px;
+  width: 90px;
+  /* transform: rotate(45deg); */
+  position: absolute;
+}
+.icons2 img:first-child {
+  bottom: -65px;
+  left: 20px;
+}
+
+.icons2 img:last-child {
+  bottom: -57px;
+  right: 15px;
+}
+label {
+  position: relative;
+  cursor: pointer;
+}
+
+label[data-tooltip]:hover::after {
+  content: attr(data-tooltip); /* Display tooltip text from the attribute */
+  position: absolute;
+  bottom: 100%; /* Position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 14px;
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out;
+}
+
+label[data-tooltip]::after {
+  opacity: 0;
+  visibility: hidden;
+}
+.logo img {
+  margin: -50px;
+  height: 150px;
+  width: 150px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+  <nav>
+    <h1>Vehicle Service management</h1>
+    <div class="nav-links">
+      <a href="about_us.html" class="about">About Us</a>
+      <a href="contact_us.html" class="contact">Contact US</a>
+    </div>
+  </nav>
+  <div class="image-container">
+    <img src="road.jpg" alt="Road Image" class="background-image">
+    <img src="gif1.gif" alt="Running Car" class="car-gif">
+  </div>
+  <div class="container">
+    <div class="left">
+      <img src="homebg.webp">
+    </div>
+    <div class="container2">
+      <div class="header">
+        <div class=" icons icons1">
+          <img src="Lucid_Sapphire_Image-7.jpg">
+          <img src="pagani.png">
+        </div>
+        <p>Welcome</p>
+      </div>
+      <div class="login">
+        <p>
+          Login to your Account:
+        </p>
+        <div class="label">
+          <input type="radio" id="admin" name="Login" value="admin.html">
+          <label for="admin" data-tooltip="Admin Login"><img src="admin.png"></label><br>
+          <input type="radio" id="mechanic" name="Login" value="mechanic.html">
+          <label for="mechanic" data-tooltip="Mechanic Login"><img src="mechanic.png"></label><br>
+          <input type="radio" id="client" name="Login" value="client.html">
+          <label for="client" data-tooltip="Client Login"><img src="client.png"></label><br>
+        </div>
+        <button id="loginButton">OK</button>
+      </div>
+      <div class="footer">
+        <div class=" icons icons2">
+          <img src="RollsRoyce.jpg">
+          <img src="mercedez1.png">
+        </div>
+        <div class="logo">
+          <img src="team_logo.png">
+        </div>
+      </div>
+    </div>
+</body>
+<script>
+  document.getElementById("loginButton").addEventListener("click", function () {
+    // Get all radio buttons with the name "Login"
+    const radios = document.getElementsByName("Login");
+    let selectedPage = null;
+
+    // Check which radio button is selected
+    for (const radio of radios) {
+      if (radio.checked) {
+        selectedPage = radio.value; // Get the value of the selected radio button
+        break;
+      }
+    }
+
+    // Redirect if a page is selected, otherwise alert the user
+    if (selectedPage) {
+      window.location.href = selectedPage; // Redirect to the selected page
+    } else {
+      alert("Please select a login option before proceeding.");
+    }
+  });
+</script>
+
+</html>

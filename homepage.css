@@ -6,7 +6,7 @@
 
 /* Navbar Section */
 nav {
-  background: url(bg1.jpeg);
+  background-color: black;
   font-size: 24px;
   height: auto;
   display: flex;
@@ -29,7 +29,6 @@ nav h1 {
 
 .nav-links a {
   text-decoration: none; /* Remove underline */
-  color: black;
   font-size: 18px; /* Adjust font size */
   margin-left: 10px; /* Add space between links */
   transition: color 0.3s;
@@ -37,7 +36,7 @@ nav h1 {
 }
 
 .nav-links a:hover {
-  color: red; /* Change color on hover */
+  color: white; /* Change color on hover */
 }
 .image-container {
   position: relative; /* Sets the container as a positioning reference */
